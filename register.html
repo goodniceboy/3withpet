@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" /><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <title>Petology</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min
+    " />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.php">
+            <img src="images/logo.png" alt="">
+            <span>
+              WITH PET
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="region.html">CAFE </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="region.html">HOSPITAL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="region.html">RESTARUANT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="region.html">SALON</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="region.html">CULTURE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="LOGIN.html">LOGIN</a>
+                </li>
+        
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+            <div class="quote_btn-container  d-flex justify-content-center">
+              <a href="">
+                Call: +01 1234567890
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <body>
+        <div class="container">
+            <h2>회원가입</h2>
+            <form action="process_register.php" method="POST">
+                <div class="form-group">
+                    <label for="username">아이디</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                  <label for="dog_name">강아지 이름</label>
+                  <input type="dog_name" class="form-control" id="dog_name" name="dog_name" required>
+              </div>
+                <div class="form-group">
+                    <label for="dog_breed">강아지 종류</label>
+                    <input type="text" class="form-control" id="dog_breed" name="dog_breed">
+                </div>
+                <div class="form-group">
+                    <label for="dog_age">강아지 나이</label>
+                    <input type="number" class="form-control" id="dog_age" name="dog_age">
+                </div>
+                <div class="form-group">
+                    <label for="dog_weight">강아지 무게 (kg)</label>
+                    <input type="number" step="0.01" class="form-control" id="dog_weight" name="dog_weight">
+                </div>
+                <div class="form-group">
+                    <label for="neutered">중성화 수술 여부</label>
+                    <select class="form-control" id="neutered" name="neutered">
+                        <option value="yes">예</option>
+                        <option value="no">아니오</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="region">지역</label>
+                    <input type="text" class="form-control" id="region" name="region">
+                </div>
+                <button type="submit" class="btn btn-primary">회원가입</button>
+            </form>
+        </div>
+    </body>
+    </html>
